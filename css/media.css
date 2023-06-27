@@ -181,7 +181,7 @@
   .customers-item {
     width: calc((100% - 48px) / 3);
   }
-}
+
 
 /* Footer */
 
@@ -211,6 +211,8 @@
 
 .subscribe-form {
   flex-direction: row;
+}
+
 }
 
 /** _________DESKTOP___________ */
@@ -361,7 +363,7 @@
   .customers-item {
     width: calc((100% - 120px) / 6);
   }
-}
+
 
 /* Footer */
 
@@ -386,4 +388,6 @@
 
 .footer-subscribe {
   width: auto;
+}
+
 }
