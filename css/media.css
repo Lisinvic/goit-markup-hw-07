@@ -356,6 +356,10 @@
 
   /* Customers section */
 
+  .customers > .container {
+    max-width: 1128px;
+  }
+
   .customers {
     padding-top: 120px;
     padding-bottom: 120px;
