@@ -666,7 +666,6 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* margin-bottom: 72px; */
 }
 
 .footer-logo {
@@ -697,7 +696,6 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 72px;
 }
 
 .footer-soc-name {

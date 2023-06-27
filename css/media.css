@@ -184,7 +184,7 @@
 }
 
 /* Footer */
-
+/* 
 .footer-container {
   max-width: 582px;
   flex-direction: row;
@@ -199,7 +199,6 @@
 
 .footer-soc {
   align-items: flex-start;
-  margin-bottom: 0;
 }
 
 .footer-subscribe {
@@ -212,9 +211,9 @@
 
 .subscribe-form {
   flex-direction: row;
-}
+} */
 
-/* _________DESKTOP___________ */
+/** _________DESKTOP___________ */
 
 @media screen and (min-width: 1158px) {
   .container {
@@ -366,7 +365,7 @@
 
 /* Footer */
 
-.footer {
+/* .footer {
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -387,16 +386,4 @@
 
 .footer-subscribe {
   width: auto;
-}
-
-/* .footer-logo-paragraf {
-  margin-right: 120px;
-} */
-
-/* .footer-subscribe {
-  margin-left: 80px;
-} */
-
-/* .subscribe-input {
-  opacity: 1;
 } */
