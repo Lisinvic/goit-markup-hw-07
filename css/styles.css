@@ -531,15 +531,17 @@ img {
 /* -------Filters------- */
 
 .partfolio {
-  padding-top: 96px;
-  padding-bottom: 120px;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
 .filters-list {
-  margin-bottom: 72px;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 300px;
   gap: 24px;
+  margin-bottom: 48px;
 }
 
 .filters-button {
@@ -551,13 +553,15 @@ img {
   font-size: 16px;
   line-height: 1.5;
   align-items: center;
+  justify-content: center;
   text-align: center;
   letter-spacing: 0.04em;
   color: var(--primary-brend);
   background-color: var(--light);
   cursor: pointer;
   min-width: 69px;
-  padding: 12px 24px;
+  height: 40px;
+  padding: 8px 16px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -578,7 +582,8 @@ img {
 .partfolio-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 48px 24px;
+  gap: 48px;
+  width: 396px;
 }
 
 .partfolio-link {
@@ -595,9 +600,10 @@ img {
 }
 
 .partfolio-item {
-  max-width: 360px;
+  /* max-width: 360px; */
   background: var(--white-background);
-  width: calc((100% - 48px) / 3);
+  /* width: calc((100% - 48px) / 3); */
+  width: 100%;
 }
 
 .partfolio-overlay-wrap {
@@ -821,13 +827,14 @@ img {
   left: 50%;
   transform: translate(-50%, -50%) scaleY(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  width: 408px;
+
+  width: 392px;
   min-height: 584px;
   background: var(--modal-background);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  padding: 72px 24px 24px 24px;
+  padding: 72px 15px 24px 15px;
 }
 
 .backdrop.is-hidden .modal {
@@ -1012,9 +1019,8 @@ img {
 }
 
 .modal-btn {
-  transform: translateX(50%);
-  margin: 0;
   display: block;
+  margin: 0 auto;
   border: none;
   min-width: 169px;
   height: 56px;
