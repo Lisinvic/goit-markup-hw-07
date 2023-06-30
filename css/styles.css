@@ -233,6 +233,10 @@ img {
   display: block;
 }
 
+.current-mob {
+  color: var(--pressed-state);
+}
+
 .mob-menu-address-list {
   display: flex;
   flex-direction: column;
@@ -262,8 +266,7 @@ img {
 
 .menu-soc-list {
   display: flex;
-
-  gap: 56px;
+  gap: 32px;
 }
 .munu-soc-item {
   width: 40px;
@@ -317,10 +320,6 @@ img {
 }
 
 .hero-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 72px;
   padding-top: 112px;
   padding-bottom: 112px;
 }
@@ -334,11 +333,14 @@ img {
   color: var(--white-background);
   max-width: 320px;
   text-transform: capitalize;
+  margin: 0 auto;
+  margin-bottom: 72px;
 }
 
 .hero-button {
   min-width: 169px;
   height: 56px;
+  margin: 0 auto;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -395,6 +397,7 @@ img {
 
 .features-text {
   color: inherit;
+  font-weight: 500;
 }
 
 /* -------Works section------- */
@@ -583,7 +586,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   gap: 48px;
-  width: 396px;
+  width: 100%;
 }
 
 .partfolio-link {
@@ -600,9 +603,7 @@ img {
 }
 
 .partfolio-item {
-  /* max-width: 360px; */
   background: var(--white-background);
-  /* width: calc((100% - 48px) / 3); */
   width: 100%;
 }
 
@@ -654,14 +655,11 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-wrap: nowrap;
   gap: 72px;
 }
 
 .footer-logo-paragraf {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 264px;
 }
 
 .footer-logo {
@@ -672,8 +670,10 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--primary-brend);
-  display: inline-block;
-  margin-bottom: 16px;
+  display: block;
+  width: fit-content;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .footer-logo-studio {
@@ -681,22 +681,17 @@ img {
 }
 
 .footer-text {
+  margin-top: 16px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--light);
-  max-width: 264px;
-}
-
-.footer-soc {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .footer-soc-name {
   font-weight: 500;
   color: var(--white-background);
+  text-align: center;
   margin-bottom: 16px;
 }
 
@@ -735,28 +730,23 @@ img {
 
 .footer-subscribe {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
 .subscribe-title {
   font-weight: 500;
   color: var(--white-background);
+  text-align: center;
   margin-bottom: 16px;
 }
 
 .subscribe-form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 16px;
   width: 100%;
 }
 
 .subscribe-lable {
   display: block;
   width: 100%;
+  margin-bottom: 24px;
 }
 
 .subscribe-input {
@@ -792,6 +782,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--white-background);
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -827,14 +818,16 @@ img {
   left: 50%;
   transform: translate(-50%, -50%) scaleY(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  width: 392px;
-  min-height: 584px;
+  width: 95%;
+  max-width: 392px;
+  height: 95%;
+  max-height: 584px;
   background: var(--modal-background);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 72px 15px 24px 15px;
+  overflow: scroll;
 }
 
 .backdrop.is-hidden .modal {
@@ -899,7 +892,7 @@ img {
 
 .modal-input {
   display: block;
-  width: 360px;
+  width: 100%;
   height: 40px;
   border: 1px solid var(--modal-overlay);
   border-radius: 4px;
